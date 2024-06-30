@@ -1,0 +1,8 @@
+/* src/assets/templates/swe.css */
+.swe {
+  background-color: #f0f8ff;
+  color: #00008b;
+  padding: 20px;
+  border: 1px solid #00008b;
+  border-radius: 8px;
+}

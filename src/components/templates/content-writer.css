@@ -1,0 +1,8 @@
+/* src/assets/templates/content-writer.css */
+.content-writer {
+  background-color: #e6e6fa;
+  color: #4b0082;
+  padding: 20px;
+  border: 1px solid #4b0082;
+  border-radius: 8px;
+}

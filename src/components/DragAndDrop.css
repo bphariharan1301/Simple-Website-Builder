@@ -1,0 +1,44 @@
+/* src/components/DragAndDrop.css */
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f3f4f6;
+  padding: 16px;
+}
+
+.box {
+  width: 50%;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.drop-zone {
+  margin-left: 8px;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.fullImage {
+  width: 100%;
+  height: auto;
+}
