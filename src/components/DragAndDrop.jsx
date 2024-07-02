@@ -44,8 +44,12 @@ const DragAndDrop = () => {
         let updatedHtml = htmlContent;
         if (templateStyles.color) {
             updatedHtml = updatedHtml.replace(
-                /<div class='content'>/g,
-                `<div class='content' style='color: ${templateStyles.color};'>`
+                /(<[^>]+style="[^"]*)color:[^;"]*;?([^"]*")/g,
+                `$1color: ${templateStyles.color};$2`
+            );
+            updatedHtml = updatedHtml.replace(
+                /(<[^>]+style="[^"]*)color:[^;"]*;?([^"]*")/g,
+                `$1color: ${templateStyles.color};$2`
             );
         }
         if (templateStyles.imageSrc) {

@@ -3,24 +3,32 @@
     "id": 1,
     "name": "SWE",
     "thumbnail": "/assets/templates/swe-thumbnail.jpg",
+<<<<<<< HEAD
     "htmlContent": "<div class='swe'><h1>Software Engineer Portfolio</h1><img src='./swe.jpg' alt='Software Engineer'><p>This is the portfolio of a software engineer.</p></div>"
   },
+=======
+    "htmlContent": "<div class='swe'><header><nav><ul><li>Home</li><li>About</li><li>Portfolio</li><li>Contact</li></ul></nav></header><main><section id='home'><h1>Software Engineer Portfolio</h1><p>Welcome to my portfolio. I'm a passionate software engineer with expertise in...</p><a href='#about' class='btn'>Learn More</a></section><section id='about'><h2>About Me</h2><p>I have X years of experience developing scalable web applications...</p></section><section id='portfolio'><h2>Portfolio</h2><div class='gallery'><img src='project1.jpg' alt='Project 1'><img src='project2.jpg' alt='Project 2'></div></section><section id='contact'><h2>Contact Me</h2><form><input type='text' placeholder='Your Name'><input type='email' placeholder='Your Email'><textarea placeholder='Your Message'></textarea><button type='submit'>Send Message</button></form></section></main><footer><p>&copy; 2024 Software Engineer Portfolio. All rights reserved.</p></footer></div>"
+  }
+  ,
+>>>>>>> 0b3720a8d94f67b293c148dcb9685f3819a6852f
   {
     "id": 2,
     "name": "UI/UX Engineer",
     "thumbnail": "/assets/templates/uiux-thumbnail.jpg",
-    "htmlContent": "<div class='uiux'><h1>UI/UX Engineer Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?uiux' alt='UI/UX Engineer'><p>This is the portfolio of a UI/UX engineer.</p></div>"
-  },
+    "htmlContent": "<div class='uiux'><header><nav><ul><li>Home</li><li>About</li><li>Portfolio</li><li>Contact</li></ul></nav></header><main><section id='home'><h1>UI/UX Engineer Portfolio</h1><p>Welcome to my portfolio. I specialize in creating intuitive and user-friendly interfaces that delight users.</p><a href='#about' class='btn'>Learn More</a></section><section id='about'><h2>About Me</h2><p>I have over X years of experience designing digital experiences for various industries. My approach focuses on user research, prototyping, and usability testing to deliver exceptional results.</p></section><section id='portfolio'><h2>Portfolio</h2><div class='gallery'><img src='project1.jpg' alt='Project 1'><img src='project2.jpg' alt='Project 2'></div></section><section id='contact'><h2>Contact Me</h2><form><input type='text' placeholder='Your Name'><input type='email' placeholder='Your Email'><textarea placeholder='Your Message'></textarea><button type='submit'>Send Message</button></form></section></main><footer><p>&copy; 2024 UI/UX Engineer Portfolio. All rights reserved.</p></footer></div>"
+  }
+  ,
   {
     "id": 3,
     "name": "Content Writer",
     "thumbnail": "/assets/templates/content-writer-thumbnail.jpg",
-    "htmlContent": "<div class='content-writer'><h1>Content Writer Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?content-writer' alt='Content Writer'><p>This is the portfolio of a content writer.</p></div>"
+    "htmlContent": "<div class='content-writer'><header><nav><ul><li>Home</li><li>About</li><li>Portfolio</li><li>Contact</li></ul></nav></header><main><section id='home'><h1>Content Writer Portfolio</h1><p>Welcome to my portfolio. I specialize in crafting compelling and engaging content that resonates with readers.</p><a href='#about' class='btn'>Learn More</a></section><section id='about'><h2>About Me</h2><p>With a passion for storytelling, I have X years of experience writing for diverse audiences. I excel in creating SEO-optimized content, blogs, articles, and more.</p></section><section id='portfolio'><h2>Portfolio</h2><div class='gallery'><img src='writing_sample1.jpg' alt='Writing Sample 1'><img src='writing_sample2.jpg' alt='Writing Sample 2'></div></section><section id='contact'><h2>Contact Me</h2><form><input type='text' placeholder='Your Name'><input type='email' placeholder='Your Email'><textarea placeholder='Your Message'></textarea><button type='submit'>Send Message</button></form></section></main><footer><p>&copy; 2024 Content Writer Portfolio. All rights reserved.</p></footer></div>"
   },
   {
     "id": 4,
     "name": "Data Scientist",
     "thumbnail": "/assets/templates/data-scientist-thumbnail.jpg",
-    "htmlContent": "<div class='data-scientist'><h1>Data Scientist Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?data-scientist' alt='Data Scientist'><p>This is the portfolio of a data scientist.</p></div>"
+    "htmlContent": "<div class='data-scientist'><header><nav><ul><li>Home</li><li>About</li><li>Portfolio</li><li>Contact</li></ul></nav></header><main><section id='home'><h1>Data Scientist Portfolio</h1><p>Welcome to my portfolio. I specialize in extracting insights from data to drive business decisions.</p><a href='#about' class='btn'>Learn More</a></section><section id='about'><h2>About Me</h2><p>With extensive experience in statistical analysis, machine learning, and data visualization, I have successfully delivered impactful solutions for diverse industries.</p></section><section id='portfolio'><h2>Portfolio</h2><div class='gallery'><img src='project1.jpg' alt='Project 1'><img src='project2.jpg' alt='Project 2'></div></section><section id='contact'><h2>Contact Me</h2><form><input type='text' placeholder='Your Name'><input type='email' placeholder='Your Email'><textarea placeholder='Your Message'></textarea><button type='submit'>Send Message</button></form></section></main><footer><p>&copy; 2024 Data Scientist Portfolio. All rights reserved.</p></footer></div>"
   }
+  
 ]
