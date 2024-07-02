@@ -3,24 +3,24 @@
     "id": 1,
     "name": "SWE",
     "thumbnail": "/assets/templates/swe-thumbnail.jpg",
-    "htmlContent": "<div class='swe'><h1>Software Engineer Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?software-engineer' alt='Software Engineer'><p>This is the portfolio of a software engineer.</p></div>"
+    "htmlContent": "<style>.swe { font-family: Arial, sans-serif; } .swe h1 { color: inherit; }</style><div class='swe'><h1>Software Engineer Portfolio</h1><img src='./swe.jpg' alt='Software Engineer'><p>This is the portfolio of a software engineer.</p></div>"
   },
   {
     "id": 2,
     "name": "UI/UX Engineer",
     "thumbnail": "/assets/templates/uiux-thumbnail.jpg",
-    "htmlContent": "<div class='uiux'><h1>UI/UX Engineer Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?uiux' alt='UI/UX Engineer'><p>This is the portfolio of a UI/UX engineer.</p></div>"
+    "htmlContent": "<style>.uiux { font-family: Arial, sans-serif; } .uiux h1 { color: inherit; }</style><div class='uiux'><h1>UI/UX Engineer Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?uiux' alt='UI/UX Engineer'><p>This is the portfolio of a UI/UX engineer.</p></div>"
   },
   {
     "id": 3,
     "name": "Content Writer",
     "thumbnail": "/assets/templates/content-writer-thumbnail.jpg",
-    "htmlContent": "<div class='content-writer'><h1>Content Writer Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?content-writer' alt='Content Writer'><p>This is the portfolio of a content writer.</p></div>"
+    "htmlContent": "<style>.content-writer { font-family: Arial, sans-serif; } .content-writer h1 { color: inherit; }</style><div class='content-writer'><h1>Content Writer Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?content-writer' alt='Content Writer'><p>This is the portfolio of a content writer.</p></div>"
   },
   {
     "id": 4,
     "name": "Data Scientist",
     "thumbnail": "/assets/templates/data-scientist-thumbnail.jpg",
-    "htmlContent": "<div class='data-scientist'><h1>Data Scientist Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?data-scientist' alt='Data Scientist'><p>This is the portfolio of a data scientist.</p></div>"
+    "htmlContent": "<style>.data-scientist { font-family: Arial, sans-serif; } .data-scientist h1 { color: inherit; }</style><div class='data-scientist'><h1>Data Scientist Portfolio</h1><img src='https://source.unsplash.com/random/800x600/?data-scientist' alt='Data Scientist'><p>This is the portfolio of a data scientist.</p></div>"
   }
 ]
