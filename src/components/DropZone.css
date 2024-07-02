@@ -1,0 +1,203 @@
+/* UI/UX Engineer Template */
+.uiux {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.uiux header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+.uiux header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.uiux header nav ul li {
+  margin: 0 10px;
+}
+
+.uiux main {
+  padding: 20px;
+}
+
+.uiux section {
+  margin-bottom: 30px;
+}
+
+.uiux section h1,
+.uiux section h2 {
+  color: #007bff;
+}
+
+.uiux .btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.uiux .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Content Writer Template */
+.content-writer {
+  font-family: "Times New Roman", serif;
+  color: #444;
+  line-height: 1.6;
+}
+
+.content-writer header {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+}
+
+.content-writer header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content-writer header nav ul li {
+  margin: 0 10px;
+}
+
+.content-writer main {
+  padding: 20px;
+}
+
+.content-writer section {
+  margin-bottom: 30px;
+}
+
+.content-writer section h1,
+.content-writer section h2 {
+  color: #28a745;
+}
+
+.content-writer .btn {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content-writer .btn:hover {
+  background-color: #218838;
+}
+
+/* Data Scientist Template */
+.data-scientist {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+.data-scientist header {
+  background-color: #ffc107;
+  color: #333;
+  padding: 10px;
+}
+
+.data-scientist header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.data-scientist header nav ul li {
+  margin: 0 10px;
+}
+
+.data-scientist main {
+  padding: 20px;
+}
+
+.data-scientist section {
+  margin-bottom: 30px;
+}
+
+.data-scientist section h1,
+.data-scientist section h2 {
+  color: #ffc107;
+}
+
+.data-scientist .btn {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.data-scientist .btn:hover {
+  background-color: #e0a800;
+}
+
+/* SWE Template */
+.swe {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.swe header {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+}
+
+.swe header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.swe header nav ul li {
+  margin: 0 10px;
+}
+
+.swe main {
+  padding: 20px;
+}
+
+.swe section {
+  margin-bottom: 30px;
+}
+
+.swe section h1,
+.swe section h2 {
+  color: #dc3545;
+}
+
+.swe .btn {
+  display: inline-block;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.swe .btn:hover {
+  background-color: #c82333;
+}
