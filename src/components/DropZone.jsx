@@ -1,82 +1,66 @@
-import React from "react";
-import { Droppable } from "react-beautiful-dnd";
-import styled from "@emotion/styled/macro";
-import { Task } from "./Task";
+// File: src/components/DragAndDrop.jsx
 
-const Title = styled.h3`
-    padding: 8px;
-    text-align: center;
-`;
-const TaskList = styled.div`
-    padding: 8px;
-    transition: background-color 0.2s ease;
-    background-color: ${(props) =>
-        props.isDraggingOver ? "skyblue" : "white"};
-    flex-grow: 1;
-    min-height: 100px;
-`;
+import React, { useState, useEffect } from "react"
+import templatesData from "../assets/templates.json"
+import "./DragAndDrop.css"
 
-let drop;
+const DragAndDrop = () => {
+  const [templates, setTemplates] = useState([])
+  const [droppedTemplate, setDroppedTemplate] = useState(null)
 
-const DropZone = ({ column, tasks, id, isDropDisabled }) => {
-    drop = isDropDisabled;
-    const Container = styled.div`
-        margin: 8px;
-        border: 2px solid lightgrey;
-        border-radius: 2px;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        background-color: white;
-        width: 500px;
+  useEffect(() => {
+    setTemplates(templatesData)
+  }, [])
 
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    `;
-    return (
-        // <Droppable droppableId="dropzone">
-        //     {(provided, snapshot) => (
-        //         <div
-        //             {...provided.droppableProps}
-        //             ref={provided.innerRef}
-        //             className={`flex-1 min-h-screen p-5 rounded-md transition-all duration-300 ${
-        //                 snapshot.isDraggingOver
-        //                     ? "bg-blue-200 border-2 border-blue-500"
-        //                     : "bg-gray-200"
-        //             }`}
-        //         >
-        //             {loadedTemplate ? (
-        //                 <div>{loadedTemplate.name}</div>
-        //             ) : (
-        //                 <p className="text-center text-gray-500">
-        //                     Drag a template here
-        //                 </p>
-        //             )}
-        //             {provided.placeholder}
-        //         </div>
-        //     )}
-        // </Droppable>
-        <Container>
-            <Title>{column.title}</Title>
-            <Droppable droppableId={column.id} isDropDisabled={drop}>
-                {(provided, snapshot) => (
-                    <TaskList
-                        ref={provided.innerRef}
-                        {...provided.droppableProps}
-                        isDraggingOver={snapshot.isDraggingOver}
-                    >
-                        {tasks.map((task, index) => (
-                            <Task key={task.id} task={task} index={index} />
-                        ))}
-                        {provided.placeholder}
-                    </TaskList>
-                )}
-            </Droppable>
-        </Container>
-    );
-};
+  const onDragStart = (event, template) => {
+    event.dataTransfer.setData("template", JSON.stringify(template))
+  }
 
-export default DropZone;
+  const onDrop = (event) => {
+    event.preventDefault()
+    const template = JSON.parse(event.dataTransfer.getData("template"))
+    setDroppedTemplate(template)
+  }
+
+  const onDragOver = (event) => {
+    event.preventDefault()
+  }
+
+  return (
+    <div className="container">
+      <div className="box">
+        <h2 className="title">Drag these templates</h2>
+        <div className="grid">
+          {templates.map((template) => (
+            <img
+              key={template.id}
+              src={template.thumbnail}
+              alt={template.name}
+              draggable
+              onDragStart={(event) => onDragStart(event, template)}
+              className="thumbnail"
+            />
+          ))}
+        </div>
+      </div>
+
+      <div
+        className="box drop-zone"
+        onDrop={onDrop}
+        onDragOver={onDragOver}
+      >
+        <h2 className="title">Drop here</h2>
+        <div className="grid">
+          {droppedTemplate && (
+            <div
+              className="template-content"
+              dangerouslySetInnerHTML={{ __html: droppedTemplate.htmlContent }}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default DragAndDrop
