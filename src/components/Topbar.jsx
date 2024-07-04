@@ -1,61 +1,77 @@
 // src/components/Topbar.jsx
 
-import React, { useState } from "react";
-import "./Topbar.css";
+import React, { useState } from "react"
+import "./Topbar.css"
 
-const Topbar = ({ onUpdateStyles }) => {
-    const [color, setColor] = useState("");
-    const [imageSrc, setImageSrc] = useState("");
-    const [videoSrc, setVideoSrc] = useState("");
+const themes = [
+  { name: "Light", className: "theme-light" },
+  { name: "Dark", className: "theme-dark" },
+  { name: "Colorful", className: "theme-colorful" },
+]
 
-    const handleColorChange = (event) => {
-        const newColor = event.target.value;
-        setColor(newColor);
-        onUpdateStyles({ color: newColor });
-    };
+const Topbar = ({ onUpdateStyles, onThemeChange }) => {
+  const [color, setColor] = useState("")
+  const [imageSrc, setImageSrc] = useState("")
+  const [videoSrc, setVideoSrc] = useState("")
 
-    const handleImageChange = (event) => {
-        const newImageSrc = event.target.value;
-        setImageSrc(newImageSrc);
-        onUpdateStyles({ imageSrc: newImageSrc });
-    };
+  const handleColorChange = (event) => {
+    const newColor = event.target.value
+    setColor(newColor)
+    onUpdateStyles({ color: newColor })
+  }
 
-    const handleVideoChange = (event) => {
-        const newVideoSrc = event.target.value;
-        setVideoSrc(newVideoSrc);
-        onUpdateStyles({ videoSrc: newVideoSrc });
-    };
+  const handleImageChange = (event) => {
+    const newImageSrc = event.target.value
+    setImageSrc(newImageSrc)
+    onUpdateStyles({ imageSrc: newImageSrc })
+  }
 
-    return (
-        <div className="topbar">
-            <label>
-                Text Color:
-                <input
-                    type="color"
-                    value={color}
-                    onChange={handleColorChange}
-                />
-            </label>
-            <label>
-                Image Source:
-                <input
-                    type="text"
-                    value={imageSrc}
-                    onChange={handleImageChange}
-                    placeholder="Enter image URL"
-                />
-            </label>
-            <label>
-                Video Source:
-                <input
-                    type="text"
-                    value={videoSrc}
-                    onChange={handleVideoChange}
-                    placeholder="Enter video URL"
-                />
-            </label>
-        </div>
-    );
-};
+  const handleVideoChange = (event) => {
+    const newVideoSrc = event.target.value
+    setVideoSrc(newVideoSrc)
+    onUpdateStyles({ videoSrc: newVideoSrc })
+  }
 
-export default Topbar;
+  return (
+    <div className="topbar">
+      <label>
+        Text Color:
+        <input
+          type="color"
+          value={color}
+          onChange={handleColorChange}
+        />
+      </label>
+      <label>
+        Image Source:
+        <input
+          type="text"
+          value={imageSrc}
+          onChange={handleImageChange}
+          placeholder="Enter image URL"
+        />
+      </label>
+      <label>
+        Video Source:
+        <input
+          type="text"
+          value={videoSrc}
+          onChange={handleVideoChange}
+          placeholder="Enter video URL"
+        />
+      </label>
+      <select onChange={(e) => onThemeChange(e.target.value)}>
+        {themes.map((theme) => (
+          <option
+            key={theme.className}
+            value={theme.className}
+          >
+            {theme.name}
+          </option>
+        ))}
+      </select>
+    </div>
+  )
+}
+
+export default Topbar
